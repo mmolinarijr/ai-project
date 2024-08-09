@@ -1,17 +1,18 @@
 
-const Users = ({ users }: Readonly<{ users: any[] }>) => {
+import Users from '@/components/Users';
+
+const getUsers = async () => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  const data = await response.json();
+  return data;
+}
+
+const GetUsers = async () => {
+  const users = await getUsers();
+
   return (
-    <div>
-      <h1>Lista de Usuários</h1>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            <strong>{user.name}</strong> - {user.email}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Users users={users} />
   );
 }
 
-export default Users;
+export default GetUsers;
