@@ -10,7 +10,7 @@ const Footer = () => {
           className='hover:underline hover:text-blue-500'
           target="_blank"
           href={mmolinariLink}>
-          mmolinari
+          mmolinarijr
         </a>
       </p>
     </footer>
