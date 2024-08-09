@@ -10,11 +10,12 @@ export default function Home() {
   ];
 
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div className='flex flex-wrap justify-center gap-4'>
+    <main className='flex max-h-screen flex-col items-center bg-white text-black dark:bg-black dark:text-white justify-between w-full'>
+      <div className='flex flex-wrap justify-center gap-2 pt-10 mt-16'>
         {pages.map((page) => (
           <Link
             key={page.id}
+            className='p-4 text-2xl font-semibol hover:underline hover:text-blue-500'
             href={page.path}>
             {page.name}
           </Link>

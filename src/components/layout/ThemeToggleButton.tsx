@@ -1,12 +1,12 @@
 import React from "react";
-import { useTheme } from "@/app/ThemeContext";
+import { useTheme } from "@/components/layout/ThemeContext";
 
 const ThemeToggleButton = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <button
-      className="p-2 rounded bg-gray-300 dark:bg-gray-700 dark:text-white"
+      className="p-2 px-3 rounded-lg bg-gray-300 dark:bg-gray-700 dark:text-white"
       onClick={toggleTheme}
     >
       {theme === "light" ? (

@@ -16,10 +16,10 @@ export default function ClientRootLayout({
   const { theme } = useTheme();
 
   return (
-    <html lang="pt-br" className={theme === "dark" ? "dark" : ""}>
-      <body className={inter.className}>
+    <html lang="pt-br" className={theme === "dark" ? "dark" : "light"}>
+      <body className={`bg-white text-black dark:bg-black dark:text-white ${inter.className}`}>
         <Header />
-        <div className='mt-16 ml-16'>{children}</div>
+        <div className="mt-24 max-h-fit">{children}</div>
         <Footer />
       </body>
     </html>
