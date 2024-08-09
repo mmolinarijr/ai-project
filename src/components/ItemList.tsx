@@ -1,8 +1,8 @@
 const ItemList = ({ items }: { items: string[] }) => {
   return (
-    <ul>
+    <ul className="py-2 my-2">
       {items.map((item, index) => (
-        <li key={index}>{item}</li>
+        <li className="list-disc" key={index}>{item}</li>
       ))}
     </ul>
   );
