@@ -4,7 +4,7 @@ const Footer = () => {
 
   return (
     <footer className='fixed bottom-0 left-0 text-center w-full'>
-      <p>
+      <p className="text-sm text-zinc-400">
         All rights reserved &copy; {currentYear}{' '}
         <a
           className='hover:underline hover:text-blue-500'
