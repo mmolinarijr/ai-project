@@ -1,5 +1,4 @@
-import React from 'react';
-import ReturnButton from './layout/ReturnButton';
+'use client';
 
 interface User {
   name: string;
@@ -12,14 +11,17 @@ interface UsersProps {
 
 const Users: React.FC<UsersProps> = ({ users }) => {
   return (
-    <div>
-      <ReturnButton />
-
-      <h2>Usuários</h2>
-      <ul>
+    <div className="p-6 w-96  rounded-lg shadow-sm border">
+      <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Usuários</h2>
+      <ul className="space-y-4">
         {users.map((user, index) => (
-          <li key={index}>
-            <strong>Nome:</strong> {user.name}, <strong>Email:</strong> {user.email}
+          <li
+            key={index}
+            className="bg-white dark:bg-gray-800 p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out">
+            <strong className="block text-gray-700 dark:text-gray-300">Nome:</strong>
+            <span className="text-gray-900 dark:text-white">{user.name}</span>
+            <strong className="block mt-2 text-gray-700 dark:text-gray-300">Email:</strong>
+            <span className="text-gray-900 dark:text-white">{user.email}</span>
           </li>
         ))}
       </ul>

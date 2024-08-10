@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ name, description, imagePath, path }) => {
   return (
-    <div className="max-w-sm flex flex-row rounded-xl h-56 font-sans overflow-hidden border shadow-sm w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 m-2">
+    <div className="max-w-sm bg-white dark:bg-gray-800 flex flex-row rounded-xl h-56 font-sans overflow-hidden border shadow-sm w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 m-2">
       <div className="w-1/2 h-full">
         <Image
           className=" object-cover object-center w-full h-full"
