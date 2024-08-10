@@ -3,7 +3,7 @@ const Footer = () => {
   const mmolinariLink = 'https://github.com/mmolinarijr/';
 
   return (
-    <footer className="fixed border-t py-3 mt-5 bg-white dark:bg-black item-center bottom-0 left-0 text-center w-full">
+    <footer className="fixed border-t py-3 bg-white dark:bg-black item-center bottom-0 left-0 text-center w-full">
       <p className="text-sm text-zinc-400">
         All rights reserved &copy; {currentYear}{' '}
         <a

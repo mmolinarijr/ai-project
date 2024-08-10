@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from "@/components/layout/ThemeContext";
-import ClientRootLayout from "@/components/layout/ClientRootLayout";
+import { ThemeProvider } from '@/components/layout/ThemeContext';
+import ClientRootLayout from '@/components/layout/ClientRootLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <ClientRootLayout>
-        <div className={inter.className}>{children}</div>
+        <main className="flex-1 flex flex-col items-center justify-between w-full overflow-y-auto">{children}</main>
       </ClientRootLayout>
     </ThemeProvider>
   );

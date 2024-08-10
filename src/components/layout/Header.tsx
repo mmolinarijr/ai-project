@@ -10,7 +10,7 @@ const Header = () => {
   const logoSrc = theme === 'dark' ? '/logo-dark.webp' : '/logo-light.webp';
 
   return (
-    <header className="fixed top-0 left-0 w-full p-5 bg-white dark:bg-black flex justify-evenly border-b dark:border-slate-700">
+    <header className="fixed z-10 top-0 left-0 w-full p-5 bg-white dark:bg-black flex justify-evenly border-b dark:border-slate-700">
       <Link href="/">
         <Image
           src={logoSrc}

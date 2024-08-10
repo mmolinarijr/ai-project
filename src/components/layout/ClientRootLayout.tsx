@@ -18,9 +18,12 @@ export default function ClientRootLayout({
     <html
       lang="pt-br"
       className={theme === 'dark' ? 'dark' : 'light'}>
-      <body className={`bg-white text-black dark:bg-black dark:text-white ${inter.className}`}>
+      <body
+        className={`flex flex-col min-h-screen bg-white text-black dark:bg-black dark:text-white ${inter.className}`}>
         <Header />
-        <div className="my-5 py-5 max-h-fit">{children}</div>
+        <main className="flex-1 flex flex-col items-center justify-between w-full pt-[100px] pb-[50px]">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
