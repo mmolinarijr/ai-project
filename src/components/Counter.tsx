@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Title from './layout/Title';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -16,7 +17,10 @@ const Counter = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="text-2xl font-bold mb-4">Contador: {count}</p>
+      <Title title="Contador" />
+      <p className="text-2xl bg-slate-400 dark:bg-gray-800 text-white px-20 py-10 rounded-md font-bold mb-4 transition duration-300 ease-in-out">
+        {count}
+      </p>
 
       <div className="flex flex-row-reverse gap-3">
         <button

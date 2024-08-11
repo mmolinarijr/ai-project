@@ -1,9 +1,13 @@
+'use client';
+
+import Title from "./layout/Title";
+
 const ItemList = ({ items }: { items: string[] }) => {
   return (
-    <>
-      <h2 className="text-2xl font-bold mb-4">Commodities:</h2>
+    <div>
+      <Title title='Commodities' />
 
-      <ul className="py-2 my-2">
+      <ul className="py-2 mt-5">
         {items.map((item, index) => (
           <li
             className="list-disc"
@@ -12,7 +16,7 @@ const ItemList = ({ items }: { items: string[] }) => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

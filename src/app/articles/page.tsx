@@ -1,27 +1,8 @@
-import Image from 'next/image';
+import Articles from '@/components/Articles';
+import articles from '@/db/articles.json';
 
-const articles = [
-  {
-    title: 'Artigo 1',
-    coverImage: '/path/to/cover-image-1.jpg',
-  },
-  {
-    title: 'Artigo 2',
-    coverImage: '/path/to/cover-image-2.jpg',
-  },
-];
-
-const Articles = () => {
-  return (
-    <div>
-      {articles.map((article) => (
-        <div key={article.title}>
-          <h2>{article.title}</h2>
-          <Image src={article.coverImage} alt={article.title} width={500} height={300} />
-        </div>
-      ))}
-    </div>
-  );
+const ArticlesMenu = async () => {
+  return <Articles articles={articles} />;
 };
 
-export default Articles;
+export default ArticlesMenu;

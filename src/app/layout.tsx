@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <ClientRootLayout>
-        <main className="flex-1 flex flex-col items-center justify-between w-full overflow-y-auto">{children}</main>
+        <main className="flex-1 flex flex-col items-center justify-between w-full h-screen">{children}</main>
       </ClientRootLayout>
     </ThemeProvider>
   );

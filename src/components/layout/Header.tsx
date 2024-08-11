@@ -21,7 +21,7 @@ const Header = () => {
       </Link>
 
       <div className="flex gap-2 items-center font-semibold">
-        <Link
+        {/* <Link
           className="invisible md:visible hover:underline hover:text-blue-600 dark:text-white"
           href="/">
           <div className="flex gap-1 items-center font-semibold">
@@ -40,7 +40,7 @@ const Header = () => {
             </svg>
             Home
           </div>
-        </Link>
+        </Link> */}
 
         <NavMenu />
 

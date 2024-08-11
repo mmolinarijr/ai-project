@@ -19,7 +19,7 @@ export default function ClientRootLayout({
       lang="pt-br"
       className={theme === 'dark' ? 'dark' : 'light'}>
       <body
-        className={`flex flex-col min-h-screen bg-white text-black dark:bg-black dark:text-white ${inter.className}`}>
+        className={`flex flex-col min-h-screen bg-white text-black dark:bg-black dark:text-white ${inter.className} transition duration-300 ease-in-out`}>
         <Header />
         <main className="flex-1 flex flex-col items-center justify-between w-full pt-[100px] pb-[50px]">
           {children}
