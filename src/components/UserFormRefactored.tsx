@@ -55,7 +55,7 @@ const UserFormRefactored: React.FC = () => {
       ) : (
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-lg mx-auto p-5 my-3 bg-white dark:bg-gray-800 shadow-sm border rounded-md">
+          className="w-full max-w-lg mx-auto p-5 my-3 bg-white dark:bg-gray-800 dark:text-black shadow-sm border rounded-md">
           <InputField
             label="Nome"
             type="text"
